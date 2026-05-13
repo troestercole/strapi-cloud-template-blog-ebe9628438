@@ -1,0 +1,38 @@
+{
+  "kind": "collectionType",
+  "collectionName": "members",
+  "info": {
+    "singularName": "member",
+    "pluralName": "members",
+    "displayName": "Member"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "title": {
+      "type": "string"
+    },
+    "is_officer": {
+      "type": "boolean",
+      "default": false
+    },
+    "department": {
+      "type": "enumeration",
+      "enum": ["fire", "ems"]
+    },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": ["images"]
+    },
+    "display_order": {
+      "type": "integer"
+    }
+  }
+}
