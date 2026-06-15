@@ -245,6 +245,7 @@ async function importSeedData() {
     global: ['find', 'findOne'],
     about: ['find', 'findOne'],
     'government-document': ['find', 'findOne'],
+    event: ['find', 'findOne'],
   });
 
   // Create all entries
