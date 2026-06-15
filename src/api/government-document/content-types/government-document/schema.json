@@ -1,0 +1,33 @@
+{
+  "kind": "collectionType",
+  "collectionName": "government_documents",
+  "info": {
+    "singularName": "government-document",
+    "pluralName": "government-documents",
+    "displayName": "Government Document"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "category": {
+      "type": "enumeration",
+      "enum": ["agenda", "minutes", "public-notice", "max-levy-resolution"],
+      "required": true
+    },
+    "date": {
+      "type": "date",
+      "required": true
+    },
+    "file": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": ["files"]
+    }
+  }
+}
